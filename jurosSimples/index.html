@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Page</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Calculadora de Juros Simples</h1>
+    <h5>Por DSR</h5>
+    <form id="jurosForm">
+      <label for="capitalInicial">Capital Inicial:</label>
+      <input type="text" id="capitalInicial" placeholder="Insira o capital inicial" required>
+
+      <label for="taxaJuros">Taxa de Juros (%):</label>
+      <input type="text" id="taxaJuros" placeholder="Insira a taxa de juros" required>
+
+      <label for="tempoMeses">Tempo (Meses):</label>
+      <input type="text" id="tempoMeses" placeholder="Insira o período de tempo em meses" required>
+
+      <button type="button" onclick="calcularJuros()">Calcular</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
